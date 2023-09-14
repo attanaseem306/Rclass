@@ -7,32 +7,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BasicExample from './App';
 import data from './data';
 import TodoApp from './todo';
-
+import Mera from './todo';
+import Card from 'antd/es/card/Card';
+import Sidebar from './Sidebar';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TodoApp/>
-{/*    
-   {
-    data.map((value,index)=>{
-     
-      return(
-      <BasicExample
-        key={index}
-        image={value.img}
-        name={value.naam}
-        title={value.title}
-        />
-        )
-    })
-   
-  } */}
-
-
+  
+    <Card/>
+    <Sidebar/>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
