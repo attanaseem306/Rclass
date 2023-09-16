@@ -1,0 +1,97 @@
+.side{
+    background-color: white;
+}
+.main{
+    margin-left: 24px;
+}
+.firstH{
+    color: green;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.thirdH{
+display: flex;
+font-weight: bold;
+margin-top: 10px;
+}
+.input1{
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.secondH{
+display: flex;
+font-weight: bold;
+margin-top: 20px;
+}
+.same{
+    display: flex;
+}
+.sameH{
+margin-top: 3px;
+font-weight: bold;
+margin-left: 11px;
+}
+.high{
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.second{
+
+    display: flex;
+    margin-left: 22px;
+}
+.fourthH{
+display: flex;
+font-weight: bold;
+margin-top: 15px;
+}
+
+.sameinput{
+margin-top: 5px;
+margin-left: 6px;
+}
+
+.secondMain{
+display: flex;
+flex-direction: column;
+}
+
+.secondlite{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.sameinput2{
+padding-left: 10px;
+padding-top: 3px;
+padding-bottom: 3px;
+border-radius: 4px;
+}
+.newDiv{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+.match{
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+}
+.btn{
+padding-left: 10px;
+padding-top: 3px;
+padding-bottom: 3px;
+border-radius: 4px;
+background-color: gray;
+}
+.Cards{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
