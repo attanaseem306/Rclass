@@ -15,13 +15,13 @@ const Cards = () => {
         getDownloadURL(ref(storage, doc.id))
         .then(async(url) => {
           console.log(url);
-          const reru = {
+          const Alldata = {
             id : doc.id,
             data : doc.data(),
             url : url
           }
-          setval(reru)
-          console.log(reru);
+          setval(Alldata)
+          console.log(Alldata);
         })
         .catch((error) => {
           console.log(error);
@@ -32,7 +32,16 @@ const Cards = () => {
 },[])
 
 
-console.log(val);
+
+let ob=[
+val
+]
+  
+
+ob.map((item)=>{
+  console.log(item);
+})
+
 
  
     
