@@ -5,7 +5,15 @@ import { getFirestore,addDoc,collection , query , getDocs} from "firebase/firest
 import { getStorage, ref ,uploadBytes, getDownloadURL} from "firebase/storage";
 
 
+<<<<<<< HEAD
 
+=======
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+>>>>>>> 2b0c7b803ea91e5fe77cceff3e8ac8db0c883929
 const firebaseConfig = {
   apiKey: "AIzaSyCrAJfYgMc2B5skStq-1L4RoXvPbMH8jSA",
   authDomain: "reactfirst-69715.firebaseapp.com",
@@ -22,6 +30,7 @@ const analytics = getAnalytics(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
+<<<<<<< HEAD
 export{db,storage,addDoc,collection,ref, uploadBytes,getDownloadURL , query , getDocs}
 
 
@@ -52,3 +61,6 @@ export{db,storage,addDoc,collection,ref, uploadBytes,getDownloadURL , query , ge
 // const db = getFirestore(app);
 
 // export{db,addDoc,collection}
+=======
+export{db,storage,addDoc,collection,ref, uploadBytes,getDownloadURL , query , getDocs}
+>>>>>>> 2b0c7b803ea91e5fe77cceff3e8ac8db0c883929

@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import Cards from './Cards';
 import  './sidebar.css'
+=======
+import Cards from './Cards'
+>>>>>>> 2b0c7b803ea91e5fe77cceff3e8ac8db0c883929
 import {db,addDoc,collection,storage,ref,uploadBytes} from './config/firebase'
 
 import {
@@ -31,17 +35,21 @@ const items = [
   getItem('Files', '9', <FileOutlined />),
 ];
 const Sidebar = () => {
+<<<<<<< HEAD
   const num=' > 100'
   const num2=' > 200'
   const num3=' > 300'
   const num4= ' > 400'
 
+=======
+>>>>>>> 2b0c7b803ea91e5fe77cceff3e8ac8db0c883929
 
 const [title,setTitle] = useState("")
 const [Price,setPrice] = useState("")
 const [img,setImg] = useState("")
 const [Category,setCategory] = useState("")
 const [Discription,setDiscription] = useState("")
+<<<<<<< HEAD
 const [Radio,setRadio] = useState("")
 const [Search,setSearch] = useState("")
 
@@ -50,6 +58,13 @@ const [Search,setSearch] = useState("")
 async function add(){
 
   console.log(Radio);
+=======
+
+
+async function add(){
+  console.log(title);
+
+>>>>>>> 2b0c7b803ea91e5fe77cceff3e8ac8db0c883929
   try {
     const docRef = await addDoc(collection(db, "item"), {
       Title: title,
@@ -131,6 +146,7 @@ async function add(){
               background: colorBgContainer,
             }}
             >
+<<<<<<< HEAD
               <div className='secondMain'>
               <div className='secondlite'>
                 <input className='sameinput2' type='text'onChange={(e) => setTitle(e.target.value)} placeholder='title' id='title' />
@@ -149,6 +165,22 @@ async function add(){
         <div style={{display:'inline-flex', flexDirection:'row', flexWrap : 'wrap', justifyContent:'space-around'}}>
        <Cards radioValue={Radio} SearchValue={Search} />
       {/* //  title={setTitle} Price={setPrice} img={setImg} Category={setCategory} Discription={setDiscription}  */}
+=======
+ <div>
+  <input type="text" onChange={(e) => setTitle(e.target.value)} placeholder='title' id='title' />
+  <input type="text" onChange={(e) => setPrice(e.target.value)} placeholder='price' id='Price' />
+  <input type="file" onChange={(e) => setImg(e.target.files[0])}  id='img' />
+  <input type="text" onChange={(e) => setCategory(e.target.value)} placeholder='Category' id='Category' />
+  <input type="text" onChange={(e) => setDiscription(e.target.value)} placeholder='discription' id='discription' />
+  <button id='btn' onClick={add}>Add</button>
+  </div>
+          <div style={{display:'flex', justifyContent:'space-around' , flexWrap : 'wrap'}}>
+  
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
+>>>>>>> 2b0c7b803ea91e5fe77cceff3e8ac8db0c883929
         </div>
           </div>
         </Content>
