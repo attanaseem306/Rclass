@@ -35,7 +35,6 @@ const Cards = (props) => {
 
  
   const filter = val.filter((item) => {
-    console.log(item.data.Price==200);
     return item.data.Price === props.radioValue
   })
 
@@ -56,7 +55,17 @@ if (props.radioValue =='' || props.radioValue == 'Card') {
             width: 300,
             marginTop: 20,
           }}
-          cover={<img alt="example" src={item.url} />}
+          cover={<img alt="example" src={item.url} />
+        }
+        actions={[
+          <>
+          <div style={{display:'flex', justifyContent:'space-around'}}>
+          <h1><img style={{width:18}} src='https://gw.alipayobjects.com/zos/rmsportal/BiraoJgbXokyzmUFqVuf.png'/></h1>
+          <EditOutlined key="edit" />
+          </div>
+          {/* // <EllipsisOutlined key="ellipsis" />, */}
+          </>
+        ]}
         >
           <Meta
             avatar={<Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel" />}
@@ -82,7 +91,11 @@ else if (filter!=""){
             marginTop: 20,
           }}
           cover={<img alt="example" src={item.url} />}
-         
+          actions={[
+            <SettingOutlined key="setting" />,
+            <EditOutlined key="edit" />,
+            <EllipsisOutlined key="ellipsis" />,
+          ]}
         >
           <Meta
             avatar={<Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel" />}
@@ -111,6 +124,11 @@ else if (filterMobileLaptop!= ''){
           }}
           cover={<img alt="example" src={item.url} />}
          
+          actions={[
+            <SettingOutlined key="setting" />,
+            <EditOutlined key="edit" />,
+            <EllipsisOutlined key="ellipsis" />,
+          ]}
         >
           <Meta
             avatar={<Avatar src="https://xsgames.co/randomusers/avatar.php?g=pixel" />}
